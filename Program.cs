@@ -1,19 +1,17 @@
-﻿
-using System.ComponentModel.Design;
+﻿int[] grades = new int[365];
+string[] dayOfWeek = new string[7];
+dayOfWeek[0] = "poniedzialek";
+dayOfWeek[1] = "wtorek";
+dayOfWeek[2] = "sroda";
+dayOfWeek[3] = "czwartek";
+dayOfWeek[4] = "piatek";
+dayOfWeek[5] = "sobota";
+dayOfWeek[6] = "niedziela";
+//Console.WriteLine(dayOfWeek[2]);
 
-var myName = "Zbigg";
-var mySex = "mezczyzna";
-var myAge = 54;
+//Console.WriteLine(dayOfWeek[0]); 
 
-if (mySex == "kobieta" && myAge < 30)
+for (int i = 0; i < dayOfWeek.Length; i=i++)
 {
-    Console.WriteLine("Kobieta ponizej 30 lat");
-}
-else if (myName == "Ewa" && myAge == 30)
-{
-    Console.WriteLine("Ewa, lat 30");
-}
-else if (mySex == "mezczyzna" && myAge < 18)
-{
-    Console.WriteLine("Niepelnoletni mezczyzna");
+    Console.WriteLine(dayOfWeek[i]);
 }
