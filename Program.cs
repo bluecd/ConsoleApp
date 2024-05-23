@@ -1,17 +1,19 @@
 ﻿int[] grades = new int[365];
-string[] dayOfWeek = new string[7];
-dayOfWeek[0] = "poniedzialek";
-dayOfWeek[1] = "wtorek";
-dayOfWeek[2] = "sroda";
-dayOfWeek[3] = "czwartek";
-dayOfWeek[4] = "piatek";
-dayOfWeek[5] = "sobota";
-dayOfWeek[6] = "niedziela";
+
+List<string> dayOfWeek = new List<string>();
+dayOfWeek.Add("poniedzialek");
+dayOfWeek.Add("wtorek");
+dayOfWeek.Add("sroda");
+dayOfWeek.Add("czwartek");
+dayOfWeek.Add("piatek");
+dayOfWeek.Add("sobota");
+dayOfWeek.Add("niedziela");
+
 //Console.WriteLine(dayOfWeek[2]);
 
 //Console.WriteLine(dayOfWeek[0]); 
 
-for (int i = 0; i < dayOfWeek.Length; i=i++)
+for (int i = 0; i < dayOfWeek.Count; i++)
 {
     Console.WriteLine(dayOfWeek[i]);
 }
