@@ -1,19 +1,24 @@
-﻿int[] grades = new int[365];
+﻿int myNumber = 367600;
+string myString = myNumber.ToString();
+string myString2 = "Podana liczba to :";
 
-List<string> dayOfWeek = new List<string>();
-dayOfWeek.Add("poniedzialek");
-dayOfWeek.Add("wtorek");
-dayOfWeek.Add("sroda");
-dayOfWeek.Add("czwartek");
-dayOfWeek.Add("piatek");
-dayOfWeek.Add("sobota");
-dayOfWeek.Add("niedziela");
+//string tekst = "Przykładowy tekst";
+Dictionary<char, int> myCounter = new Dictionary<char, int>();
 
-//Console.WriteLine(dayOfWeek[2]);
-
-//Console.WriteLine(dayOfWeek[0]); 
-
-foreach(var day in dayOfWeek)
+foreach (char znak in myString)
 {
-    Console.WriteLine(day);
+    if (myCounter.ContainsKey(znak))
+    {
+        myCounter[znak]++;
+    }
+    else
+    {
+        myCounter[znak] = 1;
+    }
+}
+
+Console.WriteLine(myString2 + myString);
+foreach (var para in myCounter)
+{
+    Console.WriteLine($"Znak {para.Key} wystepuje {para.Value} razy.");
 }
