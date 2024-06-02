@@ -17,7 +17,7 @@ foreach (char myDigit in myString)
 }
 
 Console.WriteLine(myString2 + myString);
-foreach (var para in myCounter)
+foreach (var myPair in myCounter)
 {
-    Console.WriteLine($"myDigit {para.Key} wystepuje {para.Value} razy.");
+    Console.WriteLine($"myDigit {myPair.Key} wystepuje {myPair.Value} razy.");
 }
