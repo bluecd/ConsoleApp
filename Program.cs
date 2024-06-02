@@ -5,20 +5,20 @@ string myString2 = "Podana liczba to :";
 //string tekst = "Przykładowy tekst";
 Dictionary<char, int> myCounter = new Dictionary<char, int>();
 
-foreach (char znak in myString)
+foreach (char myDigit in myString)
 {
-    if (myCounter.ContainsKey(znak))
+    if (myCounter.ContainsKey(myDigit))
     {
-        myCounter[znak]++;
+        myCounter[myDigit]++;
     }
     else
     {
-        myCounter[znak] = 1;
+        myCounter[myDigit] = 1;
     }
 }
 
 Console.WriteLine(myString2 + myString);
 foreach (var para in myCounter)
 {
-    Console.WriteLine($"Znak {para.Key} wystepuje {para.Value} razy.");
+    Console.WriteLine($"myDigit {para.Key} wystepuje {para.Value} razy.");
 }
