@@ -2,7 +2,6 @@
 string myString = myNumber.ToString();
 string myString2 = "Podana liczba to :";
 
-//string tekst = "Przykładowy tekst";
 Dictionary<char, int> myCounter = new Dictionary<char, int>();
 
 foreach (char myDigit in myString)
